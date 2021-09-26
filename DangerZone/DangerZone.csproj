@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\heimerdinger_by_frostr-d7wy8hn.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\defaultzone.jpg" />
+    <None Remove="Resources\defaultzone.png" />
+    <None Remove="Resources\gif.gif" />
+    <None Remove="Resources\logo.png" />
+    <None Remove="Resources\reveal.jpeg" />
+    <None Remove="Resources\template.jz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\template.jz">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\gif.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Caliburn.Micro" Version="4.0.173" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\defaultzone.png" />
+    <Resource Include="Resources\logo.png" />
+    <Resource Include="Resources\reveal.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\QuestionAudioView - Kopieren.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>QuestionAudioView.xaml.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

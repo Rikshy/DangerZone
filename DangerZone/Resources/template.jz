@@ -1,0 +1,38 @@
+{
+	"name": "Test",
+	"cats":[
+	{
+		"name":"Test",
+		"qs":[
+		{
+			"content":"Wie lautet der Nachname des Entwicklers dieser App rückwärts?",
+			"value":100,
+			"type":"Text"
+		},
+		{
+			"content":"SCHÄTZFRAGE: Wie viel ist 3x3?",
+			"value":200,
+			"type":"Text"
+		},
+		{
+			"content":"data\\template\\list.txt",
+			"value":300,
+			"type":"List"
+		},
+		{
+			"content":"data\\template\\web.jpg",
+			"value":400,
+			"type":"Picture"
+		},
+		{
+			"content":"data\\template\\Age Pee - Out Of The Dark (Rob Mayth Remix).mp3",
+			"value":500,
+			"type":"Audio"
+		},
+		{
+			"content":"data\\template\\small.mp4",
+			"value":600,
+			"type":"Video"
+		}]
+	}]
+}
